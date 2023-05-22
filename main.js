@@ -1,18 +1,19 @@
+var state = { count: 0 };
 var app = new Vue({
   //オプション
   el: "#app",
   data: {
-    message: "初期メッセージ",
-    age: "18",
+    count: 0,
+    message: {
+      value: "Vue.js",
+    },
     list: ["りんご", "バナナ", "いちご"],
-    show: true,
+    num: 1,
   },
   methods: {
-    handleClick: function (event) {
-      alert(event.target); //[object HTMLButtonElement]
+    increment: function () {
+      this.count += 1;
     },
   },
 });
-
-console.log(app.message);
-console.log(app.age);
+state.count++;
