@@ -4,6 +4,8 @@ var app = new Vue({
   el: "#app",
   data: {
     count: 0,
+    radius: 50,
+    ok: false,
     message: {
       value: "Vue.js",
     },
