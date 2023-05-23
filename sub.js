@@ -1,7 +1,7 @@
 var state = { count: 0 };
-var app = new Vue({
+var sub = new Vue({
   //オプション
-  el: "#app",
+  el: "#sub", //ここをHTMLのidになる
   data: {
     list: [
       { id: 1, name: "スライム", hp: 100 },
